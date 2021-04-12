@@ -1,0 +1,4 @@
+#!/bin/bash
+echo "potion" >> ~/inventory
+echo -e "You now have the potion in your inventory.\nThe potion protects you from poison gas.\nTo view your inventory type 'cat ~/inventory'"
+

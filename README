@@ -1,0 +1,21 @@
+Oh No! You've wandered into the Bash-Maze!
+You must find the chest containing the exit-scroll to get out!
+To look around type ls
+You should see a list of directions you can go like this:
+east north south west
+To move use the cd command as in 'cd north'
+If you see no directions when you type ls, then it's a dead end
+To move backward a level type cd ..
+If you find something that is not a direction, like 'chest',
+open it by typing bash chest
+Good Luck!
+
+Tips:
+- Keep track of where you are using the path displayed on the command prompt.
+  Looks something like this 'bash-maze/north/west'
+- Use tab auto-completion! If you start to type a command as in 'cd n'
+  then hit 'tab', if there is a 'north' it will type the rest for you! 
+- Watch out for traps!
+- Read the main README to learn more about bash and how to make your own maze!
+
+

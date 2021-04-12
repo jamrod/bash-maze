@@ -1,0 +1,18 @@
+#!/bin/bash
+if [ ! -e ~/inventory ]; then
+	touch ~/inventory
+fi
+if grep -q 'key' ~/inventory; then
+	echo -e "The chest opens but it's trapped\nA cloud of poison gas surrounds you!"
+	if grep -w 'potion' ~/inventory; then
+		echo -e "You drink the potion and savce yourself from the gas!\nYou find the exit-scroll! (cat exit-scroll to read)"
+		mv .hidden-thing exit-scroll
+		exit
+	else
+		echo -e "You have died!\nYou need the potion first."
+		rm ~/inventory
+		echo "Try again"
+	fi
+else
+echo -e "The chest is locked!\nMaybe you can find a key..."
+fi

@@ -1,0 +1,3 @@
+#!/bin/bash
+echo "key" >> ~/inventory
+echo -e "You now have the key in your inventory!\nThe key lets you open the chest.\nView inventory by typing 'cat ~/inventory'"
