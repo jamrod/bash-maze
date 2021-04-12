@@ -1,21 +1,34 @@
-Oh No! You've wandered into the Bash-Maze!
-You must find the chest containing the exit-scroll to get out!
-To look around type ls
-You should see a list of directions you can go like this:
-east north south west
-To move use the cd command as in 'cd north'
-If you see no directions when you type ls, then it's a dead end
-To move backward a level type cd ..
-If you find something that is not a direction, like 'chest',
-open it by typing bash chest
-Good Luck!
+## bash-maze
+This is a little experiment I thought up with the intention of teaching some basics of navigating the termianal and using bash to my kids.
 
-Tips:
-- Keep track of where you are using the path displayed on the command prompt.
-  Looks something like this 'bash-maze/north/west'
-- Use tab auto-completion! If you start to type a command as in 'cd n'
-  then hit 'tab', if there is a 'north' it will type the rest for you! 
-- Watch out for traps!
-- Read the main README to learn more about bash and how to make your own maze!
+###To run through the maze
+- Open this folder in the terminal 
+- Then cd into bash-maze 'cd bash-maze'
+- type 'cat README' to see the instructions
 
 
+***
+Don't read on if you want to do the maze first!!!
+The rest is for after you've done the maze.
+***
+
+
+### What's happening in the bash-maze?
+The bash-maze is really just a group of nested directories and a couple of bash scripts.
+The commands to move through the maze are some of the most basic commands that you use all the time in the terminal.
+- cat is the command to 'conCATenate' or copy and connect text
+-- it is often used to display the contents of a file in this way but is actually designed to put two files together, type 'man cat' in the terminal to learn more
+-- less, more or tail are also good for display the contents of a text file in the terminal 
+- ls is the command to 'LiSt' all the files and directories in a directory.
+-- You can pass a directory in to ls as in ls ~/Downloads/ and see everything in that directory
+-- Also try ls -l or ls -a, or combo ls -la
+- cd is the command to 'Change Directory' 
+-- it is always relative to the directory you are in unless you start with a '/' which starts at the root or a '~' which starts at your users home directory
+- The key and the potion are bash scripts which write a line of text to a file named 'inventory' and placed in the users home directory
+- bash is the command to run a bash script using the bash program
+- When you attempt to open the chest, that script checks the inventory for the 'key' and 'potion' and returns different results depending on whether you have one, both or none of them
+-- If you have the items then the script changes the name of a hidden file to 'exit-scroll'
+
+
+### Make your own bash-maze
+Coming soon...
