@@ -5,7 +5,7 @@ fi
 if grep -q 'key' ~/inventory; then
 	echo -e "The chest opens but it's trapped\nA cloud of poison gas surrounds you!"
 	if grep -w 'potion' ~/inventory; then
-		echo -e "You drink the potion and savce yourself from the gas!\nYou find the exit-scroll! (cat exit-scroll to read)"
+		echo -e "You drink the potion and save yourself from the gas!\nYou find the exit-scroll! (cat exit-scroll to read)"
 		mv .hidden-thing exit-scroll
 		exit
 	else
